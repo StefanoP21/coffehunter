@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeHunter</title>
+  <link rel="icon" href="assets/img/logo.png">
+
+  <!--==================== BOOTSTRAP ====================-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== FONT AWESOME ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!--==================== ANIMATE CSS ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-barra">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-2 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="logo mb-3" src="assets/img/logo-cabecera2.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-light nav__enlace" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light nav__enlace" aria-current="page" href="productos.php">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light nav__enlace" aria-current="page" href="galeria.html">GALERÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light nav__enlace" aria-current="page" href="contacto.php">CONTACTO</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-secondary text-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inicio del Carrusel -->
+    <section class="carrusel">
+      <div class="row">
+        <div class="col">
+          <div class="carousel slide" id="slideshow" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#slideshow" data-bs-slide-to="1"></li>
+              <li data-bs-target="#slideshow" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/slider.jpg" class="d-block w-100" alt="banner 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="animate_animated animate__heartBeat animate__bounceInUp carrusel__info">
+                    <img src="assets/img/icon.png" alt="icono" class="my-2 icon">
+                    <h1 class="text-white">COFFEE HUNTERS</h1>
+                    <img src="assets/img/slider-separator.png" alt="separador" class="w-auto mb-2">
+                    <p class="text-white">El mejor café a nivel nacional</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slider2.jpg" class="d-block w-100" alt="banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="animate_animated animate__heartBeat animate__bounceInUp carrusel__info">
+                    <img src="assets/img/icon.png" alt="icono" class="my-2 icon">
+                    <h1 class="text-white">COFFEE HUNTERS</h1>
+                    <img src="assets/img/slider-separator.png" alt="separador" class="w-auto mb-2">
+                    <p class="text-white">El mejor café a nivel nacional</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slider3.jpg" class="d-block w-100" alt="banner 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="animate_animated animate__heartBeat animate__bounceInUp carrusel__info">
+                    <img src="assets/img/icon.png" alt="icono" class="my-2 icon">
+                    <h1 class="text-white">COFFEE HUNTERS</h1>
+                    <img src="assets/img/slider-separator.png" alt="separador" class="w-auto mb-2">
+                    <p class="text-white">El mejor café a nivel nacional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <a href="#slideshow" class="carousel-control-prev" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a href="#slideshow" class="carousel-control-next" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin del Carrusel -->
+
+    <!-- Inicio de Nosotros -->
+    <section id="nosotros" class="m-5">
+      <div class="container d-block w-100 text-center p-5">
+        <h1>¿QUÉ OFRECEMOS?</h1>
+        <img src="assets/img/title-separator.png" alt="separador" class="p-3">
+        <p>
+          Cafés especiales cultivados por productores de distintas zonas del Perú teniendo <br>
+          un especial cuidado con la trazabilidad y la cadena de valor del café.
+        </p>
+        <div class="container">
+          <br>
+          <div class="row nosotros__fila">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img src="assets/img/producto1.png" alt="producto 1" class="p-3">
+              <h4>TIPOS DE CAFÉ</h4>
+              <p>Tostamos nuestro propio café traido desde fincas del Perú.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img src="assets/img/producto2.png" alt="producto 2" class="p-3">
+              <h4>VARIEDAD DE GRANOS</h4>
+              <p>Contamos con granos especiales para nuestros clientes.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img src="assets/img/producto3.png" alt="producto 3" class="p-3">
+              <h4>CAFÉ PARA LLEVAR</h4>
+              <p>Disfruten de nuestros cafés de Espresso Bar y Brew Bar.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <img src="assets/img/producto4.png" alt="producto 4" class="p-3">
+              <h4>CAFÉ & PASTELERÍA</h4>
+              <p>Podrán disfrutar de nuestros postres caseros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Nosotros -->
+
+    <!-- Inicio de Heraldo -->
+    <section id="heraldo" class="p-5">
+      <div class="container d-block w-100 text-center p-5">
+        <h1>EL HERALDO DEL CAFÉ</h1>
+        <img src="assets/img/title-separator.png" alt="separador" class="p-3">
+        <p>
+          El café es una de las bebidas más consumidas en el mundo, y es que su sabor <br>
+          y aroma son irresistibles.
+        </p>
+        <div class="container my-4">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 heraldo__column">
+              <img src="assets/img/coffe1.jpg" class="heraldo__img py-3" alt="heraldo">
+              <h4>ESPRESSO</h4>
+              <p class="mb-3">Rápida preparación a una alta presión y por un sabor y textura más concentrados</p>
+              <button class="btn btn-outline-secondary text-light services__button mb-4">Leer más <i
+                  class="uil uil-arrow-right button__icon"></i></button>
+
+              <div class="services__modal">
+                <div class="services__modal-content p-4">
+                  <h4 class="my-4">ESPRESSO</h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Fundamental contar con un gran café. El barista puede ser un artista pero
+                        no hace milagros, de un mal café nunca obtendrá un buen expreso.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>El grado de molienda, ya que el café expreso requiere obtener un molido
+                        fino del grano de café. Aproximadamente la textura de los granos de
+                        azúcar.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>El otro gran ingrediente para un buen expreso como supondrás es el agua.
+                      </p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Tener una buena cafetera espresso que haga llegar el agua con la
+                        suficiente presión y temperatura adecuada para obtener lo mejor del
+                        café.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 heraldo__column">
+              <img src="assets/img/coffe2.jpg" class="heraldo__img py-3" alt="heraldo">
+              <h4>PRENSA FRANCESA</h4>
+              <p class="mb-3">Garantiza una extracción viscosa con mucho cuerpo y un incremento en la textura.</p>
+              <button class="btn btn-outline-secondary text-light services__button mb-4">Leer más <i
+                  class="uil uil-arrow-right button__icon"></i></button>
+
+              <div class="services__modal">
+                <div class="services__modal-content p-4">
+                  <h4 class="my-4">PRENSA FRANCESA</h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>La cafetera de émbolo requiere de una molienda gruesa.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>El café de calidad, preferiblemente arábica 100%, o blends con una buena
+                        arábica y una gran robusta en proporciones de 8 a 9, siento el ocho o
+                        nueve de arábica y lo restante de robusta.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Como la mayor parte del café que llevas a tu taza es agua, que el agua
+                        que utilizas ha de ser a la fuerza de calidad.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>El ratio de extracción agua café es una fórmula sencilla que se obtiene
+                        de dividir los gramos de agua por los gramos de café que vas a utilizar.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 heraldo__column">
+              <img src="assets/img/coffe3.jpg" class="heraldo__img py-3" alt="heraldo">
+              <h4>IBRIK TURCO</h4>
+              <p class="mb-3">Bebida muy concentrada, se sirve en tazas pequeñas sin asas, con o sin azúcar.</p>
+              <button class="btn btn-outline-secondary text-light services__button">Leer más <i
+                  class="uil uil-arrow-right button__icon"></i></button>
+
+              <div class="services__modal">
+                <div class="services__modal-content p-4">
+                  <h4 class="my-4">IBRIK TURCO</h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Es el método de elaboración del café más antiguo del mundo.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Permanece caliente durante mucho tiempo gracias a su deliciosa espuma,
+                        que mantiene su forma durante varios minutos después de que el café se
+                        vierte en la taza.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Es único en que sus granos molidos se dejan en la taza: el café no se
+                        filtra ni se cuela porque los granos molidos se depositan en el fondo de
+                        la taza que se llama la borra (telve en turco)</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i class="uil uil-check-circle px-2"></i>
+                      <p>Es saludable ya que los granos que se depositan en el fondo de la taza no
+                        se beben. Además, Contiene menos cafeína en una porción que otros tipos
+                        de café.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Heraldo -->
+
+    <!-- Inicio de Colaboradores -->
+    <section class="colaboradores my-5">
+      <div class="container d-block w-100 text-center p-3">
+        <h1>NUESTROS COLABORADORES</h1>
+        <img src="assets/img/title-separator.png" alt="separador" class="p-3">
+        <p>
+          Trabajamos con los mejores proveedores de café del Perú, para ofrecer <br>
+          a nuestros clientes la mejor calidad en cada taza.
+        </p>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="assets/img/colaborador1.jpg" alt="colaborador" class="w-100 rounded-circle px-2">
+              <h4 class="mt-4">AURELIO CANO</h4>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter mb-4"></i>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="assets/img/colaborador2.jpg" alt="colaborador" class="w-100 rounded-circle px-2">
+              <h4 class="mt-4">DELIA QUISPE</h4>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter mb-4"></i>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="assets/img/colaborador3.jpg" alt="colaborador" class="w-100 rounded-circle px-2">
+              <h4 class="mt-4">YULI AREVALO</h4>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Colaboradores -->
+
+    <!-- Inicio de Flyer -->
+    <section>
+      <div class="flyer">
+        <img src="assets/img/separata.png" alt="flyer" class="d-block w-100 text-center">
+      </div>
+    </section>
+    <!-- Fin de Flyer -->
+
+    <!-- Inicio de Números  -->
+    <section id="numeros" class="m-5">
+      <div class="container p-5 text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 px-4">
+            <h3 class="pb-3 wow animate__animated animate__bounceInLeft">30</h3>
+            <h4>VARIEDADES DE CAFÉ</h4>
+            <p>Café seleccionado con los mayores estándares de calidad.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 px-4">
+            <h3 class="pb-3 wow animate__animated animate__bounceIn">121</h3>
+            <h4>HORAS DE TESTEADO</h4>
+            <p>Aseguramos un buen control de calidad en la recolección del café.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 px-4">
+            <h3 class="pb-3 wow animate__animated animate__bounceIn">210</h3>
+            <h4>MERCADOS DE CAFÉ</h4>
+            <p>Nuestros productos son los más solicitados a nivel nacional.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 px-4">
+            <h3 class="pb-3 wow animate__animated animate__bounceInRight">50</h3>
+            <h4>MARCAS DE CAFÉ</h4>
+            <p>Contamos con diferentes marcas de café en mercados locales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Números -->
+
+    <!-- Inicio de los Productos -->
+    <section id="productos" class="p-5">
+      <div class="container d-block w-100 p-5 text-center">
+        <h1>NUESTROS PRODUCTOS</h1>
+        <img src="assets/img/title-separator.png" alt="separador" class="p-3">
+        <p>Productos naturales provenientes de diferentes partes del Perú cultivados por productores locales.
+        </p>
+        <div class="container">
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3" id="palestina">
+              <img src="assets/img/hunters1.png" alt="hunter" class="w-100 productos__img">
+              <h4>LA PALESTINA</h4>
+              <P>$ 15.00</P>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="huanuco">
+              <img src="assets/img/hunters2.png" alt="hunter" class="w-100 productos__img">
+              <h4>HUÁNUCO</h4>
+              <P>$ 18.00</P>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="inambari">
+              <img src="assets/img/hunters3.png" alt="hunter" class="w-100 productos__img">
+              <h4>ALTO INAMBARI</h4>
+              <P>$ 21.00</P>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="geisha">
+              <img src="assets/img/hunters4.png" alt="hunter" class="w-100 productos__img">
+              <h4>GEISHA</h4>
+              <P>$ 25.00</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de los Productos -->
+
+    <!-- Inicio de Juego -->
+    <section id="juego" class="pt-5">
+      <div class="container p-5 text-center">
+        <div class="row">
+          <h1>¿Quieres ganar un descuento en tu próxima compra?</h1>
+          <h3 class="py-4">COMPLETA EL JUEGO</h3>
+          <div class="col-sm-12 col-lg-12 pb-5 card-container">
+            <div class="wrapper">
+              <ul class="cards">
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-1.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-2.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-3.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-4.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-5.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-6.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-5.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-6.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-1.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-2.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-3.png" alt="card-img">
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="view front-view">
+                    <img src="assets/img/logo.png" alt="icon">
+                  </div>
+                  <div class="view back-view">
+                    <img src="assets/img/img-4.png" alt="card-img">
+                  </div>
+                </li>
+                <div class="details">
+                  <p class="time">Tiempo: <span><b>20</b>s</span></p>
+                  <p class="flips">Intentos: <span><b>0</b></span></p>
+                  <button>Empezar</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Juego -->
+
+    <!-- Inicio de Contacto -->
+    <section id="contacto" class="p-5">
+      <div class="container p-5 text-center">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 pb-5">
+            <h4>¡Ponte en contacto con nuestro equipo para recibir tu recompensa!</h4>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <button class="btn text-light px-4 py-3" type="submit"><a href="contacto.php">CONTÁCTANOS</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Contacto -->
+
+    <!-- Inicio de Tiendas -->
+    <section class="tienda">
+      <div class="py-5">
+        <div class="container p-5 text-center">
+          <img src="assets/img/logo-cabecera2.png" alt="logo" class="tienda__logo mb-4">
+          <div class="row mt-4">
+            <p>
+              <i class="fa-solid fa-store mx-2"></i>Surquillo - Calle Las Tiendas 295
+            </p>
+          </div>
+          <div class="row mt-4">
+            <p>
+              <i class="fa-solid fa-store mx-2"></i>Pueblo Libre - Av. Bolívar 1199
+            </p>
+          </div>
+          <div class="row mt-4">
+            <p>
+              <i class="fa-solid fa-store mx-2"></i>Surco - Paseo la Castellana
+            </p>
+          </div>
+          <h4 class="py-4" style="color: white">NOTICIAS TAN FRESCAS COMO NUESTRO CAFÉ</h4>
+          <button class="tienda__caja">
+            su correo electrónico...
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de Tiendas -->
+
+    <!-- Inicio Logos -->
+    <section class="logos py-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <img src="assets/img/logo-1.png" alt="logo 1">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <img src="assets/img/logo-3.png" alt="logo 3">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <img src="assets/img/logo-2.png" alt="logo 2">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Logos -->
+  </main>
+
+  <!-- Inicio del Footer -->
+  <footer class="text-center text-lg-start text-white footer">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 footer__redes">
+      <!-- Left -->
+      <div class="me-5">
+        <span>Conéctate conmigo a través de mis redes sociales</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/AldairStefanoPalomino"
+          role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/stefano_p21" role="button"
+          target="_blank"><i class="fab fa-twitter"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/stefanop23/" role="button"
+          target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/aldair-palomino/"
+          role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/StefanoP21" role="button"
+          target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="footer__links">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">COFFEE HUNTER</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+            <h6>El mejor café a nivel nacional</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Productos</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+            <h6>
+              <a href="#productos" class="text-white">La Palestina</a>
+            </h6>
+            <h6>
+              <a href="#productos" class="text-white">Huánuco</a>
+            </h6>
+            <h6>
+              <a href="#productos" class="text-white">Alto Inambari</a>
+            </h6>
+            <h6>
+              <a href="#productos" class="text-white">Geisha</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Enlaces útiles</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+            <h6>
+              <a href="index.html" class="text-white">Inicio</a>
+            </h6>
+            <h6>
+              <a href="productos.php" class="text-white">Productos</a>
+            </h6>
+            <h6>
+              <a href="galeria.html" class="text-white">Galería</a>
+            </h6>
+            <h6>
+              <a href="contacto.php" class="text-white">Contacto</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contacto</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+            <h6><i class="fas fa-home mx-2"></i> Miraflores - Av. La Paz 646</h6>
+            <h6><i class="fas fa-envelope mx-2"></i> stefanop21@outlook.es</h6>
+            <h6><i class="fas fa-phone mx-2"></i> +51 987 052 642</h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 footer__autor">
+      <span>© 2023 Copyright: <a class="text-white" href="https://github.com/StefanoP21" target="_blank"> Stefano
+          Palomino</a></span>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Fin del Footer -->
+
+  <!--==================== BOOTSTRAP ====================-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+
+  <!--==================== WOW JS ====================-->
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
